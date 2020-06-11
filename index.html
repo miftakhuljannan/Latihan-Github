@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kartu PraKerja</title>
+
+	<script>
+		alert("Selamat datang di halaman kami");
+
+		var nama = prompt("Masukan nama", "");
+		document.write("<p>Hello "+ nama +"</p>");
+
+		function test () {
+			var val1=document.kirim.T1.value
+		if(val1>41&&55)
+   			document.kirim.T2.value="D"
+		if(val1>56&&60)
+  			 document.kirim.T2.value="C"
+		if(val1>61&&65)
+   			document.kirim.T2.value="BC"
+		if(val1>66&&70)
+  			 document.kirim.T2.value="B"
+		if(val1>71&&80)
+  			 document.kirim.T2.value="AB"
+		if(val1>81&&100)
+   				document.kirim.T2.value="A"
+			}
+	</script>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+	
+	<!-- bagian header template -->
+	<header>
+		<h1 class="judul">Kartu PraKerja</h1>
+		<p class="deskripsi">Tingkatkan Kompetensi Kerja dengan Kartu Prakerja</p>
+	</header>
+	<!-- akhir bagian header template -->
+	
+	<div class="wrap">
+		<!-- bagian menu		 -->
+		<nav class="menu">
+			<ul>
+				<li>
+					<a href="#">Daftar Sekarang</a>
+				</li>
+				<li>
+					<a href="#">Alert</a>
+				</li>
+				<li>
+					<a href="#">Apa Itu Kartu PraKerja</a>
+				</li>
+			</ul>
+		</nav>
+		<!-- akhir bagian menu -->
+
+		<!-- bagian sidebar website -->
+		<aside class="sidebar">
+			<div class="widget">
+				<h2>Apa Itu Kartu Prakerja</h2>
+				<p>Kartu Prakerja adalah program <b>pengembangan kompetensi berupa bantuan biaya</b> yang ditujukan untuk pencari kerja, pekerja ter-PHK atau pekerja yang membutuhkan peningkatan kompetensi</p>
+			</div>
+			<div class="widget">
+				<h2>Tugas Pemrograman Web</h2>
+				<p>
+					Nama	: Adi Satrio Wibowo
+					<br>
+					Nim		: G.211.18.0038
+				</p>
+			</div>
+		</aside>
+		<!-- akhir bagian sidebar website -->
+
+		<!-- bagian konten -->
+		<div class="content">
+			<div class="tebak">
+				<form method="POST" name="kirim">
+					<p>Masukan Nilai : <input type="text" name="T1" size="20">
+					Nilai : <input type="text" name="T2" size="20">
+					</p>
+					<p><input type="button" value="Hasil" name="B1" onclick=test()>
+					</p>
+				</form>				
+			</div>
+
+			<div class="conteudo">
+				<div class="post-info">
+					Website Resmi Kartu PraKerja
+				</div>
+				<h1>Daftar Sekarang</h1>
+				<hr>
+				<form action="contact.php" class ="form" method="POST">
+				<fieldset>
+				<legend>Registrasi</legend>
+				<p>
+				<label>Nama:</label>
+				<input type="text" name="nama" placeholder="Nama lengkap..." />
+				</p>
+				<p>
+				<label>Nik:</label>
+				<input type="text" name="Nik" placeholder="Nomor Induk KTP" />
+				</p>
+				<p>
+				<label>Username:</label>
+				<input type="text" name="username" placeholder="Username..." />
+				</p>
+				<p>
+				<label>Email:</label>
+				<input type="email" name="email" placeholder="Your email..." />
+				<p>
+				<label>Password:</label>
+				<input type="password" name="password" placeholder="Passowrd..." />
+				</p>
+				<p>
+				<label>Jenis kelamin:</label>
+				<label><input type="radio" name="jenis_kelamin" value="laki-laki" /> Laki-laki</label>
+				<label><input type="radio" name="jenis_kelamin" value="perempuan" /> Perempuan</label><br>
+				</p>
+				<p>
+				<label>Agama:</label>
+				<select name="agama">
+				<option value="islam">Islam</option>
+				<option value="kristen">Kristen</option>
+				<option value="hindu">Hindu</option>
+				<option value="budha">Budha</option>
+				</select>
+				</p>
+				<p>
+				<label>Biografi:</label>
+				<textarea name="biografi"></textarea>
+				</p>
+				<p>
+				<input type="submit" name="submit" value="Submit" />
+				<input type="reset" name="reset" value="Reset" />
+				</p>
+				</fieldset>
+				</form>
+
+			</div>
+		</div>
+	</div>
+		<!-- akhir bagian konten -->
+	<div class="footer">
+		<div class="isi">
+			@Adi satrio wibowo / G.211.18.0038
+		</div>
+	</div>
+</body>
+</html>
